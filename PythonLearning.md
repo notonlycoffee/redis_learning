@@ -46,3 +46,34 @@
 
  4. 返回到安装目录,这里是**redis-2.6.14**,输入命令
  `$: redis-server redis.conf`
+ redis就安装成功,并且启动了;
+
+
+ ---
+
+ ---
+
+ ---
+
+##为python语言安装redis客户端库*hiredis*
+**介绍:**hiredis作为python适合的库,用来连接和访问redis客户端;
+ 
+ 1. 创建目录*/usr/local/ez_python*
+ `$: mkdir /usr/local/ez_python`
+
+ 2. 下载python工具包
+ `$: wget http://peak.telecommunity.com/dist/ez_setup.py`
+
+ 3. 运行下载的python文件
+ `$: python ez_setup.py`
+
+ 4. 下载安装python的redis库--->hiredis
+ `$: python -m easy_install redis hiredis`
+
+ 等待数据跑完就安装完成了;
+
+ ---
+
+ ---
+
+ ---
