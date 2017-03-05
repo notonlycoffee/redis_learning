@@ -2,18 +2,18 @@
 
 ---
 ##Ubuntu安装python
- 1 . 在linux命令行窗口输入命令:
+ 1. 在linux命令行窗口输入命令:
 `$: wget https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz`
 等待软件下载完成,python的安装包就直接下载到当前的目录下面,文件名字为:
 **Python-3.5.2.tgz**
 
- 2 . 将下载完成的文件移动到linux的目录**/usr/local/python**下面,在**/usr/local**下面没有**python**这个文件夹,需要自己事先创建好,再将下载的文件移动到这里;
+ 2. 将下载完成的文件移动到linux的目录**/usr/local/python**下面,在**/usr/local**下面没有**python**这个文件夹,需要自己事先创建好,再将下载的文件移动到这里;
  `$: mv Python-3.5.2 /usr/local/python`
 
- 3 . 开始解压文件夹:
+ 3. 开始解压文件夹:
  `$: tar -zxvf Python-3.5.2.tgz`
 
- 4 . 进入解压之后的文件夹,运行**make**命令:
+ 4. 进入解压之后的文件夹,运行**make**命令:
  `$: cd Python-3.5.2`
  `$: make` 等待一段时间之后,重新进入命令输入模式
  `$: make install` 等待命令跑完,就安装完成了,可以输入命令`$: python`,判断是否已经安装成功,如果成功的话,则显示python的基础信息:
@@ -29,3 +29,20 @@
  ---
 
 
+
+##Ubuntu安装redis
+ 1. 进入linux目录**/usr/local**创建目录**redis**,进入该目录
+ `$: cd /usr/local`
+ `$: mkdir redis`
+ `$: cd redis`
+ `$: wget http://download.redis.io/releases/redis-2.6.14.tar.gz`等待命令跑完,就下载好文件**redis-2.6.14.tar.gz**
+
+ 2. 解压文件**redis-2.6.14.tar.gz**,
+ `$: tar -zxvf redis-2.6.14.tar.gz`进入解压之后的文件,直接输入命令
+ `$: make`,编译文件
+
+ 3. 进入**src**目录,输入命令
+ `$: make install`
+
+ 4. 返回到安装目录,这里是**redis-2.6.14**,输入命令
+ `$: redis-server redis.conf`
