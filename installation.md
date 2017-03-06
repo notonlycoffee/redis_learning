@@ -1,4 +1,4 @@
-#Python Learning
+#INSTALL SOFTWARE
 
 ---
 ## Ubuntu安装python
