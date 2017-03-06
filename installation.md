@@ -83,7 +83,7 @@
 
 ## 可能出现的问题:
 
- 1. 在运行命令`python -m easy_install redis hiredis`的时候直接报错,错误内容为
+ 1 . 在运行命令`python -m easy_install redis hiredis`的时候直接报错,错误内容为
  > error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
 
  通过谷歌之后发现了解决方法,这里可以直接查看问题的回答内容:[点击进入](http://stackoverflow.com/questions/26053982/error-setup-script-exited-with-error-command-x86-64-linux-gnu-gcc-failed-wit);说明的内容是这样子的:
@@ -95,5 +95,5 @@
 
 ---
 
- 2. 为什么不推荐在windows环境中使用redis?
+ 2 . 为什么不推荐在windows环境中使用redis?
  
