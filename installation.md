@@ -92,3 +92,8 @@
  解决方法:
  `$: sudo apt-get install python-dev`
  等待程序跑完就可以继续运行刚刚报错的命令了;
+
+---
+
+ 2. 为什么不推荐在windows环境中使用redis?
+ 
