@@ -80,6 +80,35 @@
  ---
 
 
+## 给linux的vi编辑器自定义
+
+	set tabstop=4   
+	set softtabstop=4   
+	set shiftwidth=4   
+	set noexpandtab   
+	set nu    
+	set autoindent   
+	set cindent  
+
+
+其中:
+`Tabstop`:表示一个`tab`显示出来是多少个空格的长度默认8。
+`Softtabstop`:表示在编辑模式的时候按退格键的时候退回缩进的长度,当使用`expandtab`时特别有用。
+`Shiftwidth`:表示每一级缩进的长度,一般设置成跟`softtabstop`一样。当设置成`expandtab`时缩进用空格来表示
+`noexpandtab`:则是用制表符表示一个缩进。
+`Nu`:表示显示行号。
+`Autoindent`:表示自动缩进。
+`Cindent`:是特别针对C语言自动缩进。 
+设置完后保存退出。运行source ~/.vimrc 使配置文件生效。即可体验按tab键时缩进4个空格的宽度，C编程时换行自动缩进。
+
+
+
+
+
+
+---
+
+---
 
 ## 可能出现的问题:
 
